@@ -1,0 +1,117 @@
+.App{
+  position: relative;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+  background: rgb(10, 209, 10);
+  color: rgb(237, 237, 237);
+  position: sticky;
+  top: 0;
+}
+.header .logo{
+  height: 65px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.header .logo h2{
+  text-transform: uppercase;
+}
+.header .logo h2:hover{
+  color: #FFF;
+}
+.header .navbar{
+  height: 65px;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header .navbar .link{
+  color: rgb(237, 237, 237);
+  font-weight: bolder;
+  height: 40px;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-weight: bolder;
+   display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+  transition: all .3s ease;
+}
+.header .navbar .link:hover{
+  color: #FFF;
+  background: rgba(17, 175, 17, 0.832);
+  transform: translateY(-2px);
+}
+.carouselClass{
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carouselClass .arrow{
+  position: absolute;
+  top:35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  height: 50px;
+  font-size: 60px;
+  font-weight: bolder;
+  cursor: pointer;
+  color: #FFF;
+  transition: all .3s ease-in-out;
+}
+.carouselClass .arrow p{
+  background: rgba(14, 13, 13, 0.297);
+  position: relative;
+  height: 60px;
+  display: flex;
+  align-items: flex-end;
+  width: 60px;
+  border-radius: 10px;
+  justify-content: space-around;
+  transition: all .4s ease-in-out;
+}
+.carouselClass .arrow p:hover{
+  background: rgba(14, 13, 13, 0.585);
+}
+.carouselClass .prev{
+  left: 10px;
+}
+.carouselClass .next{
+  right: 10px;
+}
+.carouselClass img{
+  height: 80vh;
+  cursor: pointer;
+}
+.createCV{
+  background: rgb(8, 220, 51);
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  transform: translateX(46vw);
+  margin: 10px;
+  border-radius: 3px;
+}
+.createCV:hover{
+    
+}
