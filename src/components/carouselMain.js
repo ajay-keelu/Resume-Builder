@@ -1,10 +1,12 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import Img1 from './carousel-images/image1.png'
 import Img2 from './carousel-images/image2.png'
 import Img3 from './carousel-images/image3.png'
 import Img4 from './carousel-images/image4.png'
 const CarouselMain = () => {
+    const navigate = useNavigate()
     const imgCon = [Img1,Img2,Img3,Img4]
     const prev = '<'
     const next = '>'
@@ -20,6 +22,7 @@ const CarouselMain = () => {
       }, []);
   return (
     <>
+            <marquee><h1>Welcome to Resume Builder</h1></marquee>
         <div className='carouselClass'>
         <div className='prev arrow' onClick={()=>{
             ind--;
@@ -35,7 +38,9 @@ const CarouselMain = () => {
         }}> <p> {next} </p> </div>
         <img src={imgCon[ind]} alt={`image${ind}`}/>
         </div>
-        <button className='createCV'>Create your CV</button>
+        <button className='createCV' onClick={()=>{
+            navigate('/create-resume')
+        }}>Create your CV</button>
         </>
   )
 }

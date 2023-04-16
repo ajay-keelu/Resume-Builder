@@ -11,7 +11,7 @@ const Header = () => {
             }}>Resume Builder</h2>
       </div>
       <div className='navbar'>
-            <Link className='link' to='/signup'>SignUp</Link>
+            <Link className='link' to='/signup'>Sign In</Link>
             <Link className='link' to='/contact'>Contact Us</Link>
       </div>
     </div>

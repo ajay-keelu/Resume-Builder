@@ -15,6 +15,7 @@
   color: rgb(237, 237, 237);
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 .header .logo{
   height: 65px;
@@ -57,7 +58,7 @@
 }
 .carouselClass{
   position: relative;
-  height: 80vh;
+  min-height: 80vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -98,6 +99,7 @@
   right: 10px;
 }
 .carouselClass img{
+  margin-top: 20px;
   height: 80vh;
   cursor: pointer;
 }
@@ -111,7 +113,276 @@
   transform: translateX(46vw);
   margin: 10px;
   border-radius: 3px;
+  font-weight: bold;
 }
 .createCV:hover{
-    
+  background:rgb(8, 165, 39) ;
+}
+.footer{
+  background: rgb(10, 209, 10);
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-weight: bolder;
+}
+/* contact*/
+.contact{
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.contact .contactText{
+  color:rgb(9, 209, 9)
+}
+.contact .contact-input{
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 15px 10px;
+  box-shadow: 8px 10px 15px rgba(182, 181, 181, 0.766),-8px -10px 15px rgba(176, 175, 175, 0.772);
+}
+.contact .contact-input .contact-div{
+  height: 50px;
+  width: 450px;
+  position: relative;
+  margin: 20px 10px;
+}
+.contact .contact-input .contact-div .cont-spac{
+  min-height: 50px;
+  width: 450px;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 24px;
+  border-radius: 5px;
+  border:  2px solid lightgrey;
+  z-index: 1;
+}
+.contact .contact-input .contact-div span{
+  position: absolute;
+  top: 10px;
+  padding: 0px 10px;
+  left: 10px;
+  color: rgb(147, 144, 144);
+  background: #fff;
+  z-index: -20;
+  transition: all .2s ease;
+} 
+.contact .contact-input .contact-div .cont-spac:focus ~ span{
+  top:-10px;
+  transform: scale(0.8);
+  z-index: 1;
+  border-left:  2px solid lightgrey;
+  border-right:  2px solid lightgrey;
+}
+.contact .cont-spac::placeholder{
+  display: block;
+  font-size: 16px;
+  color: rgb(179, 177, 177);
+}
+.contact .cont-spac:focus::placeholder{
+  /* display: none; */
+  font-size: 0px !important;
+}
+.contact .texta{
+  height: 100px !important;
+}
+.contactSubmit{
+  background: rgb(8, 220, 51);
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  margin-top: 40px;
+  border-radius: 3px;
+  position: absolute;
+  right:0px;
+  font-weight: bold;
+}
+.contactSubmit:hover{
+  background:rgb(8, 165, 39) ;
+}
+/* sign up */
+.signup{
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.signup .signText{
+  transform: translateX(-180px) translateY(-20px);
+  color:rgb(9, 209, 9)
+}
+.signup .signup-input{
+  height: 300px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 15px 10px;
+  box-shadow: 8px 10px 15px rgba(182, 181, 181, 0.766),-8px -10px 15px rgba(176, 175, 175, 0.772);
+}
+.signup .signup-input .signup-div{
+  height: 50px;
+  width: 450px;
+  position: relative;
+  margin: 20px 10px;
+}
+.signup .signup-input .signup-div .cont-spac{
+  min-height: 50px;
+  width: 450px;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 24px;
+  border-radius: 5px;
+  border:  2px solid lightgrey;
+  z-index: 1;
+}
+.signup .signup-input .signup-div span{
+  position: absolute;
+  top: 10px;
+  padding: 0px 10px;
+  left: 10px;
+  color: rgb(146, 143, 143);
+  background: #fff;
+  z-index: -20;
+  transition: all .2s ease;
+} 
+.signup .signup-input .signup-div .cont-spac:focus ~ span{
+  top:-10px;
+  transform: scale(0.8);
+  z-index: 1;
+  border-left:  2px solid lightgrey;
+  border-right:  2px solid lightgrey;
+}
+.signup .cont-spac::placeholder{
+  display: block;
+  font-size: 16px;
+  color: rgb(179, 177, 177);
+}
+.signup .cont-spac:focus::placeholder{
+  /* display: none; */
+  font-size: 0px !important;
+}
+.signup .texta{
+  height: 100px !important;
+}
+.signupSubmit{
+  background: rgb(8, 220, 51);
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  margin-top: 10px;
+  border-radius: 3px;
+  position: absolute;
+  right:0px;
+  font-weight: bold;
+}
+.signupSubmit:hover{
+  background:rgb(8, 165, 39) ;
+}
+/* resume create */
+.createResume{
+  min-height: 150vh;
+  padding: 40px 25px;
+  display: flex;
+  justify-content: center;
+}
+.createResume .createInput{
+  padding: 10px 15px;
+  min-height: 100vh;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 6px 10px 17px rgba(158, 157, 157, 0.775),
+              -6px -10px 17px rgba(158, 157, 157, 0.775);
+}
+.createResume .createInput .inpMedia{
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.createResume .createInput .inpMedia .media{
+  position: relative;
+  height: 45px;
+}
+.createInput .inpMedia .media .mediainp{
+  width: 24vw;
+  z-index: 0;
+  height: 45px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid lightgrey;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+.createInput .inpMedia .media span{
+  position: absolute;
+  left: 10px;
+  color: rgb(147, 144, 144);
+  top: 10px;
+  padding: 0px 10px;
+  height: min-content;
+  font-size: 15px;
+  z-index: -1;
+  transition: all .3s ease-in;
+}
+.createInput .inpMedia .media .mediainp:focus ~ span{
+  top:-10px;
+  z-index: 1;
+  transform: scale(.9);
+  left: 10px;
+  border-left: 2px solid lightgrey;
+  border-right: 2px solid lightgrey;
+  background-color: #FFF;
+}
+.inpMedia .media .mediainp::placeholder{
+  display: block;
+  font-size: 16px;
+  color: rgb(147, 144, 144);
+}
+.inpMedia .media .mediainp:focus::placeholder{
+  /* display: none; */
+  font-size: 0px !important;
+}
+.createInput .head{
+  color: rgb(7, 207, 7);
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid lightgrey;
+  margin-bottom: 20px;
+}
+.createResume .summary{
+  width:74vw !important;
+}
+.createResume .tele{
+  width: 36.5vw !important;
+}
+.createInput .heading{
+  color: rgb(153, 150, 150);
+  margin-left: 10px;
+}
+.createResume .division{
+  border: 1px solid lightgray !important;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+hr{
+  border: 2px solid lightgrey;
+  margin: 0px 15px;
+  border-radius: 2px;
 }
