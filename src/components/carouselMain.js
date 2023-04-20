@@ -17,9 +17,9 @@ const CarouselMain = () => {
             if(ind > 3)
                 ind = 0;
           upInd(ind);
-        }, 5000);
+        }, 3000);
         return () => clearInterval(imageChange);
-      }, []);
+      }, [ind]);
   return (
     <>
             <marquee><h1>Welcome to Resume Builder</h1></marquee>

@@ -109,14 +109,15 @@
   border: none;
   outline: none;
   cursor: pointer;
-  color: #fff;
-  transform: translateX(46vw);
+  color: #ebe9e9;
+  transform: translateX(44vw);
   margin: 10px;
   border-radius: 3px;
   font-weight: bold;
 }
 .createCV:hover{
   background:rgb(8, 165, 39) ;
+  color:#fff;
 }
 .footer{
   background: rgb(10, 209, 10);
@@ -129,7 +130,7 @@
 }
 /* contact*/
 .contact{
-  min-height: 85vh;
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -140,7 +141,7 @@
   color:rgb(9, 209, 9)
 }
 .contact .contact-input{
-  height: 500px;
+  min-height: 500px;
   width: 500px;
   display: flex;
   flex-direction: column;
@@ -320,7 +321,7 @@
   height: 45px;
 }
 .createInput .inpMedia .media .mediainp{
-  width: 24vw;
+  width: 22.5vw;
   z-index: 0;
   height: 45px;
   border-radius: 5px;
@@ -366,23 +367,39 @@
   margin-bottom: 20px;
 }
 .createResume .summary{
-  width:74vw !important;
+  width:72vw !important;
 }
 .createResume .tele{
-  width: 36.5vw !important;
+  width: 35vw !important;
 }
 .createInput .heading{
   color: rgb(153, 150, 150);
   margin-left: 10px;
+  position: relative;
+}
+.createInput .heading::after{
+  content: '';
+  height: 2px;
+  /* position:absolute; */
+  display: inline;
+  margin: 5px 10px;
+  background: rgb(185, 182, 182);
+  width: 100px;
 }
 .createResume .division{
   border: 1px solid lightgray !important;
   border-radius: 5px;
   margin-top: 15px;
   margin-bottom: 15px;
+  padding:10px !important;
 }
 hr{
   border: 2px solid lightgrey;
   margin: 0px 15px;
   border-radius: 2px;
+}
+.createResume .skills{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }

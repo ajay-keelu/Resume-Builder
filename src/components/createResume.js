@@ -211,6 +211,51 @@ const CreateResume = () => {
                   </div>
               </div>
           </div>
+          <div className='heading'>
+              <h3>Skills</h3>
+          </div>
+          <div className='division skills'>
+              <div className='inpMedia'>
+                <div className='media'>
+                  <input className='mediainp ' type='text' placeholder='Skill' />
+                  <span>Skill </span>
+                </div>
+              </div>
+              <div className='inpMedia'>
+                <div className='media'>
+                  <input className='mediainp ' type='text' placeholder='Skill' />
+                  <span>Skill</span>
+                </div>
+              </div>
+              <div className='inpMedia'>
+                  <div className='media'>
+                    <input className='mediainp ' type='text' placeholder='Skill' />
+                    <span>Skill</span>
+                  </div>
+              </div>
+              <div className='inpMedia'>
+                  <div className='media'>
+                    <input className='mediainp ' type='text' placeholder='Skill' />
+                    <span>Skill</span>
+                  </div>
+              </div>
+              <div className='inpMedia'>
+                  <div className='media'>
+                    <input className='mediainp' type='text' placeholder='Skill' />
+                    <span>Skill</span>
+                  </div>
+              </div>
+              <div className='inpMedia'>
+                  <div className='media'>
+                    <input className='mediainp' type='text' placeholder='Skill' />
+                    <span>Skill</span>
+                  </div>
+              </div>
+          </div>
+          <div className='heading'>
+              <h3>Certifications</h3>
+          </div>
+          
     </div>
     </div>
   )
