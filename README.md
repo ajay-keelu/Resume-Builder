@@ -1,6 +1,5 @@
-# to get started , before you have to install REACT ROUTER DOM
-### `npm i react-router-dom`
-And install ### `node modules`
+#install `node modules`
+`npm install` or `npm i`
 # Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
